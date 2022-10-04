@@ -2,7 +2,7 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateREADME = require("./utils/generateREADME");
+const generateREADME = require("./utils/generateREADME.js");
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -41,7 +41,7 @@ inquirer
       type: "list",
       name: "license",
       message: "Which license would you like to use for your application?",
-      choices: ["MIT License", "Apache 2.0 License", "unlicense"],
+      choices: ["MIT", "Apache", "unlicense"],
     },
     {
       type: "input",
